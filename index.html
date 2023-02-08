@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="de">
+<html class="no-js" lang="de-DE">
 
 <head>
   <meta charset="utf-8">
@@ -13,16 +13,31 @@
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="natoga-logo.png">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+
+<!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/e73b0feb06.js" crossorigin="anonymous"></script>
+
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </head>
 
-
+<body>
 <header>
   <div class="content-wrapper">
     <figure>
@@ -32,8 +47,8 @@
     <div class="header-divider"></div>
     <nav>
       <ul>
-        <li><a href="faq/index.html" target="_blank">FAQ</a></li>
-        <li><a href="about/index.html" target="_blank">About</a></li>
+        <li><a href="angebote/index.html" target="_blank">Angebote</a></li>
+        <li><a href="about/index.html" target="_blank">Über mich</a></li>
       </ul>
     </nav>
   </div>
@@ -41,123 +56,111 @@
 
 <main>
 
-  <section class="hero-area">
+  <section id="hero-area">
     <div class="content-wrapper">
-      <h1> Retreat from the desk, return refreshed.</h1>
+      <h1> Wie würdest du dich fühlen, wenn du endlich wieder schlafen könntest?</h1>
     </div>
   </section>
 
-  <aside>
+  <section id="intro">
     <div class="content-wrapper">
-      <div class="form-description">
-        <h3>Want to join the next retreat?</h3>
-        <p>Find out when we are holding our next retreat and how your company or team can sign up!
-        </p>
-      </div>
-      <div class="form">
-        <h3>Find out more!</h3>
-        <input type="text" name="name" value="name@email.com">
-        <input type="button" value="Download Itinerary">
-      </div>
-    </div> <!-- aside content wrapper ends -->
-  </aside>
-
-  <section class="features">
-    <div class="content-wrapper">
-      <h2>Have the work week you always dreamed of — without the bad wifi.</h2>
-      <div class="features-items">
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-campground"></i>
-        </p>
-        <p class="features-item-description">
-        Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.
-        </p>
-      </article>
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-bed"></i>
-        </p>
-        <p class="features-item-description">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4 breakout rooms.</p>
-      </article>
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-utensils"></i>
-        </p>
-        <p class="features-item-description">
-        Private chef team providing on demand meals - just like your team kitchen.
-        </p>
-      </article>
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-shoe-prints"></i>
-        </p>
-        <p class="features-item-description">
-        5 outdoor obstacle courses, including private beach ½ mile from bungalow.
-        </p>
-      </article>
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-smile"></i>
-        </p>
-        <p class="features-item-description">
-        Retreat facilitator to manage your day to day activities so you all get a chance to reset.
-        </p>
-      </article>
-      <article>
-        <p class="fontawesome-icon">
-          <i class="fas fa-wifi"></i>
-        </p>
-        <p class="features-item-description">
-        Dedicated computer room for times that you must wifi.
-        </p>
-      </article>
+      <p>Schlafen ist ein Grundbedürfnis. Das Wichtigste, das wir haben. Auch du kannst wieder 
+        schlafen lernen und zurück zu Lebendigkeit und Leichtigkeit finden. Dein Nervensystem 
+        wird erfahren, wie es ist, wieder in den Entspannungsmodus zu finden und loszulassen. 
+        Loszulassen, was war und was sein wird. Du wirst ankommen: im Hier und Jetzt. Du wirst 
+        abends ins Bett gehen können, ohne dir Gedanken über das Ein- oder Durchschlafen 
+        machen zu müssen. Finde heraus, wie es sich anfühlt, wenn aus deiner Sensibilität deine 
+        größte Stärke wird und wie es ist, den Glauben an dich und deine Fähigkeit zu 
+        erholsamem Schlaf wiederzuerlangen!
+      </p>
     </div>
-</section>
+   <!-- intro content wrapper ends -->
+  </section>
 
-<section class="reviews">
-  <div class="content-wrapper">
-    <h2>Be a better team in 5 days, like these.</h2>
-      <article>
-        <figure>
-          <img src="img/omar-lopez-296944-unsplash.jpg" alt="team photo"></a>
-        </figure>
-        <div>
-          <h3>LaCrue Bottling Co. October 2017</h3>
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          </p>
+  <section id="offers">
+    <div class="content-wrapper">
+      <h2>Mein Angebot für sensible Frauen</h2>
+        <div class="schlafmentoring">
+          <img src="">
+          <h3>1:1 Schlafmentoring</h3>
+            <p class="offer-description">
+              Sensibilität ist deineStärke! Und deshalb wirst auch du wieder entspannt schlafen lernen.  
+              Wir analysieren zunächst dein Schlafverhalten, führen 14 Tage lang Schlaftagebuch, 
+              werden uns mit Schlafhygiene sowie Schlaf-Wach-Rhythmus beschäftigen. 
+              Achtsamkeitsübungen und mehr Selbstliebe werden dir helfen, dich so anzunehmen wie 
+              du bist, nicht ständig einen inneren Kampf mit dir auszufechten. Deine Einstellung zu 
+              Schlaf wird sich im Laufe der Zeit verändern, wenn du bereit bist, mit mir gemeinsam an 
+              dir zu arbeiten. Vitalisierende Yogaübungen am Morgen werden dich genauso 
+              unterstützen wie ruhige Yogahaltungen am Abend, die dein Nervensystem vor dem 
+              Einschlafen beruhigen und dich aus dem Denk- und Tunmodus heraus- und in den puren 
+              Seinmodus hineinbringen.
+            </p>
         </div>
-      </article>
+
+        <div class="meditation">
+          <img src="">
+          <h3>Meditation & Yoga Nidra</h3>
+            <p class="offer-description">
+              Finde zurück zu einem entspannten Nervensystem und ruhe wieder in deiner Mitte. Du 
+              bist sensibler als viele andere Menschen und genau so bist du richtig!
+              Lerne, dich so anzunehmen wie du bist und finde zu innerer Balance, durch die du das 
+              Außen loslassen kannst.
+            </p>
+        </div>
+
+        <div class="zoom">
+          <img src="">
+          <h3>Live-Zoom-Klassen</h3>
+            <p class="offer-description">
+              Morgens: Vinyasa Flow & Pranayama
+              Abends: Restorative Yoga & Pranayama
+              Starte mit vitalisierenden Atem- und Yogaübungen in dem Morgen, um selbst nach einer 
+              Nacht mit wenig Schlaf leicht und lebenidg durch den Tag zu kommen.
+              Lasse deinen Tag mit ruhigen restorativen Yogahaltungen und erdenden Atemübungen 
+              ausklingen. So bist du optimal vorbereitet für einen erholsamen Schlaf und dein 
+              überreiztes Nervensystem findet wieder zur Ruhe. Du lässt Eindrücke und Gedanken des 
+              Tages hinter dir und kommst ganz bei dir an.
+            </p>
+        </div>
     </div>
   </section>
+
+  <section id="about">
+    <div class="content-wrapper">
+      <div class="about-text">
+        <h3>Über mich</h3>
+        <p>Hi, ich bin Natalie, passionierte und zertifizierte Yogalehrerin für Vinyasa Yoga, Yin Yoga 
+          und Yoga Nidra, und ich habe mich dem Kampf für guten Schlaf verschrieben. Als sensible
+          Frau mit einem sensiblen Nervensystem habe ich nach jahrzentelangen Schlafstörungen 
+          dank Yoga wieder zurück zu erholsamem Schlaf gefunden.
+        </p>
+      </div>
+      <div class="me-image">
+        <img src="img/1625495274138.jpg">
+      </div>
+    </div>
+  </section>
+      
 </main> <!-- main wrapper ends -->
 
 <footer>
   <div class="content-wrapper">
     <div class="footer-content">
       <div class="contact">
-        <h4>Contact</h4>
+        <h4>Kontakt</h4>
         <address>
           <p>
-            555-555-5555<br>
-            hello@unplugged.com
+           hallo@natoga.de
           </p>
         </address>
       </div>
-      <div class="social">
-        <h4>Social</h4>
-        <div class="social-icons">
+      <div class="social-icons">
           <p>
-            <a href="https://www.facebook.com/yoursite" target="_blank"><i class="fab fa-facebook-f">
+            <a href="https://www.facebook.com/profile.php?id=100069520567714" target="_blank"><i class="fab fa-facebook-f">
             </i></a>
           </p>
           <p>
-            <a href="https://www.twitter.com/yoursite" target="_blank"><i class="fab fa-twitter"></i>
-            </a>
-          </p>
-          <p>
-            <a href="https://www.instagram.com/yoursite" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/yoga.for.bettersleep/" target="_blank"><i class="fab fa-instagram"></i></a>
           </p>
         </div>
       </div>
@@ -165,26 +168,13 @@
   </div> <!-- footer content-wrapper ends -->
 
   <div class="copyright">
-    <p>Copyright 2022 | Unplugged</p>
+    <p>Copyright 2023 | Natoga</p>
   </div>
 </footer>
-<body>
 
- 
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
 
 
-</html>
